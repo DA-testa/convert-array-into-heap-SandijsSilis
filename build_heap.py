@@ -25,20 +25,20 @@ def build_heap(data):
 def main():
     # n = 5
     # data = list(map(int, '5 4 3 2 1'.split()))
-    # n = input()
-    # data = list(map(int, input().split()))
-    # if 'I' in n:
-    #     n = input()
-    #     data = list(map(int, input().split()))
-    # if 'F' in n:
-    #     filename = "./tests/" + input()     
-    #     with open(filename, mode="r") as fails:
-    #         n = int(fails.readline())
-    #         data = list(map(int, fails.readline().split()))
-    filename = input()
-    with open("./tests/"+filename, mode="r") as fails:
-        n = int(fails.readline())
-        data = list(map(int, fails.readline().split()))
+    n = input()
+    if 'I' in n:
+        n = input()
+        data = list(map(int, input().split()))
+    if 'F' in n:
+        inputf = input()
+        filename = "./tests/" + inputf  
+        with open(filename, mode="r") as fails:
+            n = int(fails.readline())
+            data = list(map(int, fails.readline().split()))
+    # filename = "./tests/"     
+    # with open(filename, mode="r") as fails:
+    #     n = int(fails.readline())
+    #     data = list(map(int, fails.readline().split()))
 
     assert len(data) == n
     swaps = build_heap(data)
