@@ -25,7 +25,7 @@ def build_heap(data):
 def main():
     # n = 5
     # data = list(map(int, '5 4 3 2 1'.split()))
-    n = int(input())
+    n = input()
     data = list(map(int, input().split()))
     if 'I' in n:
         n = int(input())
