@@ -27,7 +27,7 @@ def main():
     # data = list(map(int, '5 4 3 2 1'.split()))
     n = input()
     if 'I' in n:
-        n = input()
+        n = int(input())
         data = list(map(int, input().split()))
     if 'F' in n:
         inputf = input()
