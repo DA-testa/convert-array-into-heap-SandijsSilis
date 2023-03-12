@@ -25,11 +25,11 @@ def build_heap(data):
 def main():
     # n = 5
     # data = list(map(int, '5 4 3 2 1'.split()))
-    n = input()
-    if 'I' in n:
+    in_type = input()
+    if 'I' in in_type:
         n = int(input())
         data = list(map(int, input().split()))
-    if 'F' in n:
+    if 'F' in in_type:
         inputf = input()
         filename = "./tests/" + inputf  
         with open(filename, mode="r") as fails:
