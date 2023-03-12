@@ -35,8 +35,8 @@ def main():
     #     with open(filename, mode="r") as fails:
     #         n = int(fails.readline())
     #         data = list(map(int, fails.readline().split()))
-    filename = "./tests/04"     
-    with open(filename, mode="r") as fails:
+    filename = input()
+    with open("./tests/"+filename, mode="r") as fails:
         n = int(fails.readline())
         data = list(map(int, fails.readline().split()))
 
