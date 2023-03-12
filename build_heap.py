@@ -28,7 +28,7 @@ def main():
     n = input()
     data = list(map(int, input().split()))
     if 'I' in n:
-        n = int(input())
+        n = input()
         data = list(map(int, input().split()))
     if 'F' in n:
         filename = "./tests/" + input()     
